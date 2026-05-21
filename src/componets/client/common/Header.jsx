@@ -10,7 +10,7 @@ function Header(props) {
             <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
                 <Link className="navbar-brand font-weight-bold text-secondary" style={{ fontSize: 50 }}>
                     <i className="flaticon-043-teddy-bear" />
-                    <span className="text-primary">KidKinder</span>
+                    <span className="text-primary">KIDKINDER</span>
                 </Link>
                 <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span className="navbar-toggler-icon" />

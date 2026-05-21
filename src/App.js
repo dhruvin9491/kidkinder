@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/client/Home';
+import Header from './componets/client/common/Header';
+import Footer from './componets/client/common/Footer';
+import BackToTopBtn from './componets/client/common/BackToTopBtn';
+import About from './pages/client/About';
+import LangageProvider from './context/language.context';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <LangageProvider>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+        <Footer />
+        <BackToTopBtn />
+      </LangageProvider>
+    </BrowserRouter>
   );
 }
 

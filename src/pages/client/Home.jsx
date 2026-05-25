@@ -49,6 +49,8 @@ function Home(props) {
 
         }
     ]);
+    const {lang, fn} = useContext(languageContext);
+    console.log(lang);
     return (
         <>
             <div className="container-fluid bg-primary px-0 px-md-5 mb-5">

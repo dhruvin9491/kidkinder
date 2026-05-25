@@ -48,14 +48,9 @@ function About(props) {
 
         }
     ]);
-    const { lang } = useContext(languageContext);
     return (
         <div className="container-fluid pt-5">
-            <h1 className="display-3 font-weight-bold text-center my-4">
-                {LANGUAGES_VALUE.HI === lang ? "हमारे बारे में" :
-                    LANGUAGES_VALUE.GJ === lang ? "અમારા વિશે" :
-                        "About Us"}
-            </h1>
+            <h1 className="display-3 font-weight-bold text-center my-4">About Us</h1>
             <div className="container pb-3">
                 <div className="row">
                     {
